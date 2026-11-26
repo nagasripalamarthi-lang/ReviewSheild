@@ -1,0 +1,128 @@
+{
+  "trained_at_utc": "2026-11-26 11:17:07 UTC",
+  "selected_model": "Logistic Regression (TF-IDF + Stylometric)",
+  "selection_rationale": "Logistic Regression achieves strong F1/ROC-AUC alongside calibrated probabilities and exact linear token/stylometric attribution for transparent explanations.",
+  "dataset_audit": {
+    "initial_rows": 216,
+    "valid_rows": 216,
+    "dropped_missing_text": 0,
+    "dropped_missing_label": 0,
+    "genuine_count": 116,
+    "suspicious_count": 100,
+    "categories": [
+      "Apparel",
+      "Beauty & Skincare",
+      "Books & Accessories",
+      "Electronics",
+      "Home & Kitchen"
+    ],
+    "data_origin": "synthetic_benchmark"
+  },
+  "split_sizes": {
+    "train_samples": 172,
+    "test_samples": 44,
+    "test_fraction": 0.2
+  },
+  "primary_metrics": {
+    "cv_f1_mean": 0.9603,
+    "cv_f1_std": 0.0342,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "confusion_matrix": [
+      [
+        24,
+        0
+      ],
+      [
+        0,
+        20
+      ]
+    ]
+  },
+  "model_comparison": [
+    {
+      "model_name": "Logistic Regression (TF-IDF + Stylometric)",
+      "cv_f1_mean": 0.9603,
+      "cv_f1_std": 0.0342,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    {
+      "model_name": "Linear SVM (Calibrated)",
+      "cv_f1_mean": 0.9535,
+      "cv_f1_std": 0.0354,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    {
+      "model_name": "Random Forest",
+      "cv_f1_mean": 0.9793,
+      "cv_f1_std": 0.0414,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    {
+      "model_name": "Complement Naive Bayes",
+      "cv_f1_mean": 0.9664,
+      "cv_f1_std": 0.0378,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          20
+        ]
+      ]
+    }
+  ],
+  "disclaimer": "Predictions reflect statistical patterns learned from a synthetic & curated educational benchmark dataset and do NOT constitute verified proof of fake or fraudulent activity."
+}
